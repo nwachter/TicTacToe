@@ -46,11 +46,12 @@ window.onload = () => {
             return false;
         }
 
-        if (starter !== PLAYER_O) {
+        if (starter === PLAYER_X) {
             tour++;
         }
 
-        e.innerHTML = `Test ${symbolX}`;
+        // e.innerHTML = `Test ${symbolX}`;
+        e.target.innerHTML = PLAYER_X;
         console.log("target : ", e.target);
         // e.target.innerHTML = PLAYER_X;
 
@@ -177,6 +178,9 @@ window.onload = () => {
 
     function computerTurn() {
         console.log("TOUR DE l'ORDINATEUR");
+        if (starter === PLAYER_O) {
+            tour++;
+        }
         player = PLAYER_O;
         let filledTabCells = Array.from(cells).map((elem, i) => (elem.childNodes.length > 0 ? i : null)).filter(i => i !== null);
         let computerTry = getRandomNumber(9);
