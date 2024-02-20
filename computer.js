@@ -154,7 +154,9 @@ window.onload = () => {
         e.target.innerText = PLAYER_X;
         // e.target.innerText = "<img src='assets/images/neon_x.webp class='symbol_x' />";
 
-        e.target.appendChild(symbolX);
+        // e.target.appendChild(symbolX);
+
+
 
         //Création array à partir du tableau de la page
         let tableau = makeArray();
