@@ -1,0 +1,71 @@
+<!-- Three.js  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://db.onlinewebfonts.com/c/89695c7fc26d5856d8007dc18c42ed03?family=Cyberway+Riders"
+        rel="stylesheet">
+    <title>Joueur VS Computer</title>
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="links">
+            <a href="index.html" class="navigation holoRed">Index</a>
+            <a href="users.html" class="navigation holoRed">Player vs Player</a>
+        </div>
+        <div id="characters">
+            <img src="./assets/images/normandy-sr1.png" alt="normandy sr-1" id="normandy-image">
+            <!-- <img src="./assets/images/reaper.png" alt="reaper" id="reaper-image"> -->
+        </div>
+
+        <div id="screen-users">
+            <p id="regles" class="text-white">Cliquez sur "Jouer" pour commencer.</p>
+            <table id="tic-tac-toe" class="holo">
+
+                <tr class="row row1 holo">
+                    <td class="cell cell1 col1 row1 diagonal1 holo"></td>
+                    <td class="cell cell2 col2 row1 holo"></td>
+                    <td class="cell cell3 col3 row1 diagonal2 holo"></td>
+                </tr>
+                <tr class="row row2 holo">
+                    <td class="cell cell4 col1 row2 holo"></td>
+                    <td class="cell cell5 col2 row2 diagonal1 diagonal2 holo"></td>
+                    <td class="cell cell6 col3 row2 holo"></td>
+                </tr>
+                <tr class="row row3 holo">
+                    <td class="cell cell6 col1 row3 diagonal2 holo"></td>
+                    <td class="cell cell7 col2 row3 holo"></td>
+                    <td class="cell cell8 col3 row3 diagonal1 holo"></td>
+                </tr>
+            </table>
+            <!-- <p id="victory-message" class="holoWhite"></p> -->
+
+            <table id="scores">
+                <tr class="holo">
+                    <th class="holo">Player X</td>
+                    <th class="holo">Computer O</td>
+                </tr>
+                <tr class="holo">
+                    <td id="cell-playerX">0</td>
+                    <td id="cell-playerO">0</td>
+                </tr>
+            </table>
+            <div id="btns-jeu-computer">
+                <button id="btn-play" class="text-green">Jouer</button>
+                <button id="btn-recommencer" class="text-red">Recommencer</button>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <script defer src="./computer.js"></script>
+</body>
+
+</html>
